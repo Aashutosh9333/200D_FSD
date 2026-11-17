@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="otp-card">
+
+            <div class="icon">🔒</div>
+
+            <h1>OTP Verification</h1>
+            <p class="description">
+                Verify your mobile number to continue.
+            </p>
+
+            <div id="phoneSection">
+                <label for="phone">Mobile Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter 10 digit mobile number"
+                    maxlength="10"
+                >
+                <button id="sendOtpBtn">Send OTP</button>
+            </div>
+
+            <div id="otpSection" class="hidden">
+
+                <p class="message">
+                    Enter the 6-digit OTP sent to your mobile.
+                </p>
+
+                <div class="otp-inputs">
+                    <input class="otp-box" maxlength="1" inputmode="numeric">
+                    <input class="otp-box" maxlength="1" inputmode="numeric">
+                    <input class="otp-box" maxlength="1" inputmode="numeric">
+                    <input class="otp-box" maxlength="1" inputmode="numeric">
+                    <input class="otp-box" maxlength="1" inputmode="numeric">
+                    <input class="otp-box" maxlength="1" inputmode="numeric">
+                </div>
+
+                <button id="verifyBtn">Verify OTP</button>
+
+                <p id="timerText">
+                    Resend OTP available in 30s
+                </p>
+
+                <button id="resendBtn" disabled>
+                    Resend OTP
+                </button>
+
+                <button id="changeNumberBtn" class="secondary-btn">
+                    Change Mobile Number
+                </button>
+
+            </div>
+
+            <p id="statusMessage"></p>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

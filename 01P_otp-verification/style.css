@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.otp-card {
+    background: white;
+    max-width: 420px;
+    margin: auto;
+    padding: 35px 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 26px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.description,
+.message {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#phone {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background: #6658d3;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+button:hover:not(:disabled) {
+    background: #5142bd;
+}
+
+button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+.otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 25px 0;
+}
+
+.otp-box {
+    width: 45px;
+    height: 52px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    outline: none;
+}
+
+.otp-box:focus {
+    border: 2px solid #6658d3;
+}
+
+#timerText {
+    color: #666;
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+.secondary-btn {
+    background: transparent;
+    color: #6658d3;
+}
+
+.secondary-btn:hover {
+    background: #f3f1ff;
+}
+
+.hidden {
+    display: none;
+}
+
+#statusMessage {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media (max-width: 380px) {
+    .otp-card {
+        padding: 25px 15px;
+    }
+
+    .otp-inputs {
+        gap: 5px;
+    }
+
+    .otp-box {
+        width: 39px;
+        height: 46px;
+    }
+}
