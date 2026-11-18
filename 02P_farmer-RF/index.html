@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Registration  form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="registration-card">
+            <header class="form-header">
+            <div class="logo">🌱</div>
+
+            <h1>Farmer Registration </h1>
+
+            <p>Join our farming community and register your details</p>
+            </header>
+
+            <form action="" id="farmerform">
+                <h2> Personal Information </h2>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+
+                        <input type="text " id="fullname" placeholder="Enter your full name" required>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobile"> Mobile Number *</label>
+                        <input type="tel" id="mobile" placeholder="10-digit mobile number" maxlength="10" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+
+                        <input type="email" id="email" placeholder="example@gmail.com ">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+
+                        <input type="date" id="date" placeholder="enter your date of birth">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+
+                        <select name="" id="gender" required>
+
+                            <option value="">select gender</option>
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                        </select>
+                    </div>
+                </div>
+
+                <h2>Address Information</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="state"> State </label>
+
+                        <select name="" id="state" required>
+                            <option value="">Select State</option>
+                            <option value="maharashrta">Maharashtra</option>
+                            <option value="karnataka"> Karnataka</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Madhya pradesh">Madhya Pradesh</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="district">district *</label>
+
+                        <input type="text" id="district" placeholder="Enter district name" required>
+                         <div class="form-group">
+                        <label for="village">Village Name *</label>
+
+                        <input type="text" id="village"
+                            placeholder="Enter village name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pincode">PIN Code *</label>
+
+                        <input type="text" id="pincode"
+                            placeholder="6-digit PIN code"
+                            maxlength="6" required>
+                    </div>
+
+                </div>
+
+                <h2>Farm Information</h2>
+                
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="aadhaar">Aadhaar Number</label>
+
+                        <input type="text" id="aadhaar"
+                            placeholder="Enter 12-digit Aadhaar number"
+                            maxlength="12">
+                       
+                    </div>
+
+                    <div class="form-group">
+                        <label for="landArea">Total Land Area (Acres) *</label>
+
+                        <input type="number" id="landArea"
+                            placeholder="Example: 5.5"
+                            min="0.01" step="0.01" required>
+                       
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ownership">Land Ownership *</label>
+
+                        <select id="ownership" required>
+                            <option value="">Select Ownership</option>
+                            <option value="Owned">Owned</option>
+                            <option value="Leased">Leased</option>
+                            <option value="Shared">Shared</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="crop">Main Crop *</label>
+
+                        <select id="crop" required>
+                            <option value="">Select Main Crop</option>
+                            <option value="Wheat">Wheat</option>
+                            <option value="Rice">Rice</option>
+                            <option value="Sugarcane">Sugarcane</option>
+                            <option value="Cotton">Cotton</option>
+                            <option value="Soybean">Soybean</option>
+                            <option value="Maize">Maize</option>
+                            <option value="Vegetables">Vegetables</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <h2>Account Security</h2>
+                
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="password">Create Password *</label>
+
+                        <input type="password" id="password"
+                            placeholder="Minimum 8 characters" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password *</label>
+
+                        <input type="password" id="confirmPassword"
+                            placeholder="Re-enter password" required>
+                    </div>
+
+                </div>
+
+                <div class="terms">
+                   
+
+                    <input type="checkbox" id="terms" required>
+
+                    <label for="terms">
+                        I agree to the terms and conditions.
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Register Farmer
+                </button>
+
+                <p id="message" aria-live="polite"></p>
+
+                    </div>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+    
+</body>
+</html>
