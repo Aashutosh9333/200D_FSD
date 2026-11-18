@@ -1,3 +1,7 @@
+/* set interval is built in javascript function that execute a 
+particular function reapeadtedly after a fixed time interval
+
+
 let otpTimer;
 
 function startResendTimer() {
